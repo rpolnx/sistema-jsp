@@ -1,4 +1,4 @@
-package com.org.sistema_jsp.backend.connection;
+package com.org.sistema_jsp.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

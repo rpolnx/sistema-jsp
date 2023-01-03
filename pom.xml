@@ -11,6 +11,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <m2e.projectLocation>
+            C\:\\oracle\\workspace_curso_java3\\sistema-jsp
+        </m2e.projectLocation>
+        <m2e.projectName>sistema-jsp</m2e.projectName>
+        <groupId>curso-jsp</groupId>
+        <artifactId>curso-jsp</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </properties>
 
     <dependencies>

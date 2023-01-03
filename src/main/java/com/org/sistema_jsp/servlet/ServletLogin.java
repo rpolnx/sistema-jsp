@@ -1,9 +1,9 @@
-package com.org.sistema_jsp.backend.servlet;
+package com.org.sistema_jsp.servlet;
 
 import java.io.IOException;
 
-import com.org.sistema_jsp.backend.dao.DAOLoginRepository;
-import com.org.sistema_jsp.backend.model.ModelLogin;
+import com.org.sistema_jsp.dao.DAOLoginRepository;
+import com.org.sistema_jsp.model.ModelLogin;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

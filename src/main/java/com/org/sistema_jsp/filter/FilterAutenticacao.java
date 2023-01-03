@@ -1,6 +1,6 @@
-package com.org.sistema_jsp.backend.filter;
+package com.org.sistema_jsp.filter;
 
-import com.org.sistema_jsp.backend.connection.SingleConnectionBanco;
+import com.org.sistema_jsp.connection.SingleConnectionBanco;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;

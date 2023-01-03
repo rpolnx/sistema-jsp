@@ -1,8 +1,8 @@
-package com.org.sistema_jsp.backend.dao;
+package com.org.sistema_jsp.dao;
 
 
-import com.org.sistema_jsp.backend.connection.SingleConnectionBanco;
-import com.org.sistema_jsp.backend.model.ModelLogin;
+import com.org.sistema_jsp.connection.SingleConnectionBanco;
+import com.org.sistema_jsp.model.ModelLogin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

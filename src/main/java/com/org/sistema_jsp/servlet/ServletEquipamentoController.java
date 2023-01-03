@@ -1,8 +1,8 @@
-package com.org.sistema_jsp.backend.servlet;
+package com.org.sistema_jsp.servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.org.sistema_jsp.backend.dao.DAOEquipamentoRepository;
-import com.org.sistema_jsp.backend.model.ModelEquipamento;
+import com.org.sistema_jsp.dao.DAOEquipamentoRepository;
+import com.org.sistema_jsp.model.ModelEquipamento;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

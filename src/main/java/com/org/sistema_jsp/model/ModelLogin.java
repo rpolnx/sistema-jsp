@@ -1,4 +1,4 @@
-package com.org.sistema_jsp.backend.model;
+package com.org.sistema_jsp.model;
 
 import java.io.Serializable;
 
