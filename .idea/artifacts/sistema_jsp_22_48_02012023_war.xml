@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="sistema-jsp-22-48 02012023:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/sistema_jsp_22_48_02012023_war</output-path>
-    <root id="archive" name="sistema-jsp-22-48 02012023_war.war">
-      <element id="artifact" artifact-name="sistema-jsp-22-48 02012023:war exploded" />
-    </root>
-  </artifact>
-</component>

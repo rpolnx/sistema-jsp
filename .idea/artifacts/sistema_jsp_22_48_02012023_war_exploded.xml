@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="sistema-jsp-22-48 02012023:war exploded">
-    <output-path>$PROJECT_DIR$</output-path>
-    <root id="root">
-      <element id="javaee-facet-resources" facet="sistema-jsp-22-48 02012023/web/Web" />
-    </root>
-  </artifact>
-</component>
