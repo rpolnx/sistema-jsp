@@ -76,14 +76,13 @@ public class ServletEquipamentoController<BigInteger> extends HttpServlet {
 
             String id = request.getParameter("id");
             String descricao = request.getParameter("descricao");
-            System.out.println(request.getParameter("tipo_equipamento"));
             BigDecimal tipo_equipamento = new BigDecimal(request.getParameter("tipo_equipamento"));
 
             String data_nf_string = request.getParameter("data_nf");
-            String numero_nf = request.getParameter("numero_nf");
-            String cod_objetocusto = request.getParameter("cod_objetocusto");
+            BigDecimal numero_nf = new BigDecimal(request.getParameter("numero_nf"));
+            BigDecimal cod_objetocusto = new BigDecimal(request.getParameter("cod_objetocusto"));
             String solicitante_equipamento = request.getParameter("solicitante_equipamento");
-            String usuario_cadastro = request.getParameter("usuario_cadastro");
+            BigDecimal usuario_cadastro = new BigDecimal(request.getParameter("usuario_cadastro"));
             String data_cadastro_string = request.getParameter("data_cadastro");
 
             ModelEquipamento modelEquipamento = new ModelEquipamento();

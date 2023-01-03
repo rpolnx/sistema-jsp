@@ -55,7 +55,7 @@
 				<ul class="pcoded-submenu">
 				
 					<li class=" "><a
-						href="<%=request.getContextPath()%>/src/main/java/com.org.sistema_jsp/frontend/principal/usuario.jsp?acao=listarUser"
+						href="<%=request.getContextPath()%>/principal/usuario.jsp?acao=listarUser"
 						class="waves-effect waves-dark"> <span class="pcoded-micon"><i
 								class="ti-angle-right"></i></span> <span class="pcoded-mtext"
 							data-i18n="nav.basic-components.alert">Usuário</span> <span
@@ -63,7 +63,7 @@
 					</a></li>
 					
 					<li class=" "><a 
-						href="<%=request.getContextPath()%>/src/main/java/com.org.sistema_jsp/frontend/principal/equipamento.jsp"
+						href="<%=request.getContextPath()%>/principal/equipamento.jsp"
 						class="waves-effect waves-dark"> <span class="pcoded-micon"><i
 								class="ti-angle-right"></i></span> <span class="pcoded-mtext"
 							data-i18n="nav.basic-components.breadcrumbs">Equipamento</span> <span

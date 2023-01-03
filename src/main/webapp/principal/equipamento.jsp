@@ -81,7 +81,14 @@
 															</div>
 
 															<div class="form-group form-default form-static-label">
-																<input type="text" name="nome" id="cod_objetocust"
+																<input type="text" name="numero_nf" id="numero_nf"
+																	   class="form-control" required="required"
+																	   value="${modelEquipamento.numero_nf}"> <span
+																	class="form-bar"></span> <label class="float-label">Numero nf</label>
+															</div>
+
+															<div class="form-group form-default form-static-label">
+																<input type="text" name="cod_objetocusto" id="cod_objetocusto"
 																	class="form-control" required="required"
 																	value="${modelEquipamento.cod_objetocusto}"> <span
 																	class="form-bar"></span> <label class="float-label">Objeto
@@ -89,9 +96,9 @@
 															</div>
 
 															<div class="form-group form-default form-static-label">
-																<input type="text" name="solitante_equipamento" id="solitante_equipamento"
+																<input type="text" name="solicitante_equipamento" id="solicitante_equipamento"
 																	class="form-control" required="required"
-																	value="${modelEquipamento.solitante_equipamento}">
+																	value="${modelEquipamento.solicitante_equipamento}">
 																<span class="form-bar"></span> <label
 																	class="float-label">C - Solicitante Equipamento</label>
 															</div>
@@ -105,7 +112,7 @@
 															</div>
 
 															<div class="form-group form-default form-static-label">
-																<input type="date" name="nome" id="nome"
+																<input type="date" name="data_cadastro" id="data_cadastro"
 																	class="form-control" required="required"
 																	value="${modelEquipamento.data_cadastro}"> <span
 																	class="form-bar"></span> <label class="float-label">D - Data

@@ -29,10 +29,10 @@ public class DAOEquipamentoRepository {
 
             preparedSql.setDate(3, java.sql.Date.valueOf(objeto.getData_nf()));
 
-            preparedSql.setString(4, objeto.getNumero_nf());
-            preparedSql.setString(5, objeto.getCod_objetocusto());
+            preparedSql.setBigDecimal(4, objeto.getNumero_nf());
+            preparedSql.setBigDecimal(5, objeto.getCod_objetocusto());
             preparedSql.setString(6, objeto.getSolicitante_equipamento());
-            preparedSql.setString(7, objeto.getUsuario_cadastro());
+            preparedSql.setBigDecimal(7, objeto.getUsuario_cadastro());
 
             preparedSql.setDate(8, java.sql.Date.valueOf(objeto.getData_cadastro()));
             preparedSql.execute();
@@ -46,10 +46,10 @@ public class DAOEquipamentoRepository {
             preparedSql.setDate(3, java.sql.Date.valueOf(objeto.getData_nf()));
 
 
-            preparedSql.setString(4, objeto.getNumero_nf());
-            preparedSql.setString(5, objeto.getCod_objetocusto());
+            preparedSql.setBigDecimal(4, objeto.getNumero_nf());
+            preparedSql.setBigDecimal(5, objeto.getCod_objetocusto());
             preparedSql.setString(6, objeto.getSolicitante_equipamento());
-            preparedSql.setString(7, objeto.getUsuario_cadastro());
+            preparedSql.setBigDecimal(7, objeto.getUsuario_cadastro());
             preparedSql.setDate(8, java.sql.Date.valueOf(objeto.getData_cadastro()));
             preparedSql.executeUpdate();
             connection.commit();
@@ -77,10 +77,10 @@ public class DAOEquipamentoRepository {
                     .toLocalDate();
 
             modelEquipamento.setData_nf(dateNfLocalDate);
-            modelEquipamento.setNumero_nf(resultado.getString("numero_nf"));
-            modelEquipamento.setCod_objetocusto(resultado.getString("cod_objetocusto"));
+            modelEquipamento.setNumero_nf(resultado.getBigDecimal("numero_nf"));
+            modelEquipamento.setCod_objetocusto(resultado.getBigDecimal("cod_objetocusto"));
             modelEquipamento.setSolicitante_equipamento(resultado.getString("solicitante_equipamento"));
-            modelEquipamento.setUsuario_cadastro(resultado.getString("usuario_cadastro"));
+            modelEquipamento.setUsuario_cadastro(resultado.getBigDecimal("usuario_cadastro"));
 
             LocalDate dataCadastroLocalDate = Instant.ofEpochMilli(resultado.getDate("data_cadastro").getTime())
                     .atZone(ZoneId.systemDefault())
@@ -102,10 +102,10 @@ public class DAOEquipamentoRepository {
             modelEquipamento.setDescricao(resultado.getString("descricao"));
             modelEquipamento.setTipo_equipamento(resultado.getBigDecimal("tipo_equipamento"));
             //		modelEquipamento.setData_nf(resultado.getString("data_nf"));
-            modelEquipamento.setNumero_nf(resultado.getString("numero_nf"));
-            modelEquipamento.setCod_objetocusto(resultado.getString("cod_objetocusto"));
+            modelEquipamento.setNumero_nf(resultado.getBigDecimal("numero_nf"));
+            modelEquipamento.setCod_objetocusto(resultado.getBigDecimal("cod_objetocusto"));
             modelEquipamento.setSolicitante_equipamento(resultado.getString("solicitante_equipamento"));
-            modelEquipamento.setUsuario_cadastro(resultado.getString("usuario_cadastro"));
+            modelEquipamento.setUsuario_cadastro(resultado.getBigDecimal("usuario_cadastro"));
             //		modelEquipamento.setData_cadastro(resultado.getString("data_cadastro"));
         }
         return modelEquipamento;
@@ -122,10 +122,10 @@ public class DAOEquipamentoRepository {
             modelEquipamento.setDescricao(resultado.getString("descricao"));
             modelEquipamento.setTipo_equipamento(resultado.getBigDecimal("tipo_equipamento"));
             //		modelEquipamento.setData_nf(resultado.getString("data_nf"));
-            modelEquipamento.setNumero_nf(resultado.getString("numero_nf"));
-            modelEquipamento.setCod_objetocusto(resultado.getString("cod_objetocusto"));
+            modelEquipamento.setNumero_nf(resultado.getBigDecimal("numero_nf"));
+            modelEquipamento.setCod_objetocusto(resultado.getBigDecimal("cod_objetocusto"));
             modelEquipamento.setSolicitante_equipamento(resultado.getString("solicitante_equipamento"));
-            modelEquipamento.setUsuario_cadastro(resultado.getString("usuario_cadastro"));
+            modelEquipamento.setUsuario_cadastro(resultado.getBigDecimal("usuario_cadastro"));
         }
         return modelEquipamento;
     }
