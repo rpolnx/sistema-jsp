@@ -1,0 +1,16 @@
+
+
+version: '3.7'
+
+services:
+  postgres:
+    container_name: postgres-sistema-jsp
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    restart: always
